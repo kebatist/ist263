@@ -42,7 +42,14 @@
             <input type="text" id="fullname" name="fullname">
             <!-- the name will show when the form is submitted -->
              <label for="special">Special Instructions:</label>
-             <input type="text" id="special" name="special">
+             <textarea id="special" name="special" ></textarea>
+             <br> 
+             <p>pickup or delivery</p>
+             <input type="radio" id="delivery1" name="delivery" value="pickup">
+                <label for="delivery1">Pickup</label>
+             <input type="radio" id="delivery2" name="delivery" value="delivery">
+                <label for="delivery2">Delivery</label>
+             <input type="submit" value="send order">
          </form>
     </body>
 </html> 
