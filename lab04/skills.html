@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Skills</title>
+            <style> 
+                table, th, td {border:1px solid black;}
+            </style>
+        </head>
+        <body>
+             <!-- caption tag required-->
+         <caption> My Coding Skills </caption>
+         <table> 
+            <tr> 
+                <th>Skill Type</th>
+                <th>Application</th>
+                <th>Skill Level</th>
+            </tr>
+            <tr>
+                <td>Coding</td>
+                <td>SQL</td>
+                <td>Proficient</td>
+            </tr>
+              <tr>
+                <td>Coding</td>
+                <td>R</td>
+                <td>Master</td>
+            </tr>
+              <tr>
+                <td>Coding</td>
+                <td>C++</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Coding</td>
+                <td>Python</td>
+                <td>Proficient</td>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Figma</td>
+                <td>Proficient</td> 
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Canva</td>
+                <td>Master</td>
+            </tr>
+              <tr>
+                <td>Design</td>
+                <td>Adobe In-Design</td>
+                <td>Proficient</td>
+            </tr>
+              <tr>
+                <td>Design</td>
+                <td>Adobe After Effects</td>
+                <td>Proficient</td>
+            </tr>
+              <tr>
+                <td>Technical</td>
+                <td>BIOS Updates</td>
+                <td>Master</td>
+            </tr>
+              <tr>
+                <td>Technical</td>
+                <td>Windows 11</td>
+                <td>Master</td>
+            </tr>
+              <tr>
+                <td>Technical</td>
+                <td>Microsoft Software and Hardware construction</td>
+                <td>Master</td>
+            </tr>
+         </table>
+         <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <!-- this is the building type selection -->
+            <label for="Buidling">What type of building do you live in?</label> <br> 
+            <input type="checkbox" id="apartment" name="apartment" value="Bike">
+            <label for="apartment">Apartment</label><br>
+            <input type="checkbox" id="twofamily" name="twofamily" value="Car">
+            <label for="twofamily">Two Family</label><br>
+            <input type="checkbox" id="house" name="house" value="Boat">
+            <label for="house">Single Family Home</label>
+
+            <!-- this is the spot for any special instructions -->
+            <br> <br> 
+            <label for="delivery">Delivery Instructions:</label><br>
+            <textarea id="delivery" name="delivery" ></textarea>
+            <br> 
+
+            <input type="submit" value="Submit">
+        </form>
+        <form action ="https://formspree.io/f/mrpbgoqj" method="post"> </form>
+        </body>
+</html>
