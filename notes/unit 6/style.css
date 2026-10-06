@@ -1,0 +1,22 @@
+h1 {
+    color: rgb(163, 163, 184);
+} 
+p { 
+    font-size: 0.5em;
+    font-family: 'arial', sans-serif;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+/* my font will be half size of the default font size */
+p, h2 {
+    color: rgb(81, 81, 221);
+}
+
+p, a {
+    color: rgb(226, 90, 0);
+} /* changing the color of a tag inside of p tag */
+
+#welcome {
+    color: rgb(235, 173, 173);
+   text-decoration: none;
+} /* id selector, only one element can have this id, so it is unique  and it can only style one element */
