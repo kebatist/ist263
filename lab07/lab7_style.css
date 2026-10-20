@@ -21,9 +21,6 @@ nav ul {
   gap: 20px;
 }
 
-nav li + li::before {
-  content: "| ";
-}
 nav a{
     color: #520537;
 }
