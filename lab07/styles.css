@@ -1,5 +1,5 @@
 body {
-    background-color: #ECE5CE;
+    background-color: #ffe9f8;
 }
 text {
     color: #412617;
@@ -12,4 +12,12 @@ h1, h2{
 }
 nav {
     background-color: #ECE5CE;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+nav a{
+    color: #520537;
+}
+nav a:hover{
+    color: #4c3544;
 }
