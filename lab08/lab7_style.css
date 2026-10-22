@@ -1,0 +1,31 @@
+body {
+    background-color: #777194;
+}
+text {
+    color: #412617;
+}
+link {
+    color: #412617;
+}
+h1, h2{
+    color: #351025;
+}
+nav {
+    background-color: #e7d8ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a{
+    color: #520537;
+}
+nav a:hover{
+    color: #f0009c;
+}
