@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Demo</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        section div {
+            background: #f8f8f8;
+            margin: 10px;
+            padding: 20px;
+            color: #000E54;
+            flex: 1;
+        }
+        section {display: flex;
+            flex-wrap: wrap; /* this propertu must be on flexbox row */
+        }
+        img {max-width: 100%;}
+        @media only screen and (max-width:800px) { /*this is saying we are going to make styles up to 800px wide. Everything inside only applies to screen sizes within the range. */
+            body {background-color: orange;}
+            img{display: none;} /* inside media query takes the display of the element away from the page. It is still there but not visible. */
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+    <img src="https://laferger.github.io/ist263/images/campus.jpg" alt="arial view of campus">
+</header>
+
+<section>
+  
+    <div>
+        <h2>Total Body Strength</h2>
+        <p>Total Body Strength uses resistance and light to heavy weights to help build and tone muscles, increase flexibility and boost muscular endurance. This class will give you an...</p>
+        <p>
+            Oct 26<br>
+            12pm EDT<br>
+            Barnes Center at The Arch<br>
+            <a href="#">View more</a>  
+        </p>
+    </div>
+    <div>
+        <h2>Total Body Strength</h2>
+        <p>Career Pathways for Engaged Scholars
+        What career opportunities are available to scholars whose work extends beyond the university? This core workshop for the Public Scholarship Certificate will explore some of...</p>
+        <p>
+        Oct 26<br>
+        2:15pm EDT<br>
+        <a href="#">View more</a></p>
+    </div>
+    <div>
+        <h2>Total Body Strength</h2>
+        <p>Psychology Club Halloween Event
+        Join Psychology Club for a Halloween event! Come hang out with fellow psychology students for a fun night filled with Halloween-themed activities, games, treats and plenty of...</p>
+        <p>
+        Oct 27<br>
+        6:30pm EDT<br>
+        Hall of Languages<br>
+        <a href="#">View more</a></p>
+    </div>
+
+</section>
+
+
+
+
+
+
+</body>
+</html>
