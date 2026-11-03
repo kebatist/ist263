@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            border: 1px solid rgb(11, 54, 155);
+        }
+    </style>
+    <script> 
+        function firstFunction(){
+            alert("Hello World");
+        }
+        function clicky(){
+            alert("thanks for clicking");
+        }
+        function hoover(){
+            alert("thanks for hoovering");
+        }
+    </script>
+<body onload="firstFunction()">
+    <h1> Javascript Basics</h1>
+    <p onclick="clicky()">lore ipsum dolor sit amet. lorem ipsum dolor sit amet 
+    long </p>
+    <h2 onmouseover="hoover('You hovered over the heading!')"> hover text yay </h2>
+
+</body>
+</html>

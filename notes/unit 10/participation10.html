@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            border: 1px solid rgb(11, 54, 155);
+        }
+    </style>
+    <script> 
+        function firstFunction(){
+            alert("my first javascript function");
+        }
+        function clicky(){
+            alert("thanks for clicking");
+        }
+        function hoover(){
+            alert("thanks for rolling off the mouse");
+        }
+    </script>
+    <body onload="firstFunction()">
+        <h1> Javascript Participation</h1>
+        <a href="#" onclick="clicky()" onmouseout="hoover()">Click for a message</a>
+    </body>
+</html>

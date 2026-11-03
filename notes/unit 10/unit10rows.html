@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+    nav{
+        background-color: lightblue;
+        padding:20px;
+        color: rgb(51, 24, 24);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+    }
+    nav div {
+        padding: 10px;
+        display: flex;
+    }
+    .flexend{
+        justify-content: flex-end;
+    }
+    .flexspace{
+        justify-content: space-around;
+    }
+    .felxbetween{
+        justify-content: space-between;
+    }
+    .spiltnav{
+        justify-content: space-between;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Navigation</h1>
+    <h2>Flex end</h2>
+    <nav class="flexend">
+        <div>home</div>
+        <div>about</div>
+        <div>contact</div>
+        <div>products</div>
+    </nav>
+    <h2>Flex space</h2>
+    <nav class="flexspace">
+        <div>home</div>
+        <div>about</div>
+        <div>contact</div>
+        <div>products</div>
+    </nav>
+    <h2>Flex space-between</h2>
+    <nav class="flexbetween">
+        <div>home</div>
+        <div>about</div>
+        <div>contact</div>
+        <div>products</div>
+    </nav>
+    <h2>Split navigation</h2>
+    <nav class="spiltnav">
+        <div>
+            <div>home</div>
+            <div>about</div>
+            <div>contact</div>
+            <div>products</div>
+        </div>
+        <div>
+            <div>instagram</div>
+            <div>tiktok</div>
+        </div>
+    </nav>
+
+</body>
+</html>
