@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 12</title>
     <link rel="stylesheet" href="https://laferger.github.io/ist263/images/animate.css">
+    <script> 
+        function WinnerMessage() {
+            alert("You Won!!");
+        }
+        function tryAgainMessage() {
+            alert("Wrong Shell: Try again");
+        }
+
+    </script>
 </head>
 <body>
     <h1>Choose a Walnut</h1>
-    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="first walnut" class="first">
-    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="second walnut" class="second">
-    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="third walnut" class="third">
+    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="WinnerMessage()">
+    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="tryAgainMessage()">
+    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="tryAgainMessage()">
 </body>
 </html>
