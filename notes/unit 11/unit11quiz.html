@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 11 Quiz</title>
+    <script>
+        function rightAnswer(){
+            document.getElementById("true").innerHTML = '<span style="color: green;">Yes, false is correct!</span>';
+        }
+        function wrongAnswer(){
+            document.getElementById("false").innerHTML = '<span style="color: red;">No, false is the correct answer.</span>';
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Unit 11 Quiz on JavaScript</h1>
+    <p> Java and javascript are the same language.</p>
+    <p id="true" onClick="rightAnswer()">true</p>
+    <p id="false" onClick="wrongAnswer()">false</p>
+</body>
+</html>

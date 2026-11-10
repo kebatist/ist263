@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit 11 Participation</title>
+    </head>
+    <style> 
+        #university-title{
+            color: blue;
+        }
+    </style>
+    <script> 
+        function changeColor(){
+            document.getElementById("university-title").style.color = "orange";
+        }
+        function changeText(){
+            document.getElementById("university-title").innerHTML = "Orange Nation";
+        }
+        
+    </script>
+    <body>
+        <div> 
+            <h1 id="university-title" onclick="changeColor(); changeText();"> Syracuse University</h1>
+        </div>
+    </body> 
+</html>

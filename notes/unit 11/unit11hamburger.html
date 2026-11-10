@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit 11 Hamburger</title>
+        <!-- 
+        1. when the screen is large, no hamburger
+        2. when it is small we show the hamburger 
+        3. larger no x 
+        4. small show x 
+        5. larger links should be side by side 
+        6. small links should stack vertically 
+        
+        7. when you clikc on hamburger, the link should show. 
+        8. When x is clicked, hide the links
+        -->
+        <style> 
+            #hamburger{
+                width: 40px;
+            }
+            @media only screen and (min-width:900px) {
+                #hamburger, #close{
+                    display: none;
+                }
+            }
+            @media only screen and (max-width:899px) {
+                a{
+                    display: block;
+                }
+                #navitems{
+                    display: none;
+                }
+            }
+        </style>
+        <script> 
+            function showNav(){
+                document.getElementById("navitems").style.display = "block";
+            }
+            function hideNav(){
+                document.getElementById("navitems").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div> 
+            <img id="hamburger" src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger-icon" onclick="showNav()">
+        </div>
+
+        <div id="close" onclick="hideNav()">X</div>
+
+        <nav id="navitems"> 
+            <a href="">Skills</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+</html>
