@@ -4,36 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Music Is My Lucky Charm</title>
-  <style>
-    body {
-      background-color: #FFFFF4;
-    }
-    h1, h2, h3 {
-      font-family: 'Georgia', serif;
-      color: #5D4E39;
-    }
-  </style>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <a class="site-title" href="index.html">music is my lucky<br>charm</a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html" aria-current="page">homepage</a>
-      <a href="Clairo/clairoabout.html">artist 1</a>
-      <a href="Lizzy/lizzyabout.html">artist 2</a>
-      <a href="#featured-artists">artist 3</a>
+      <a href="index.html" aria-current="page">Homepage</a>
+      <a href="../Clairo/clairoabout.html">Clairo biography</a>
+      <a href="../Clairo/clairodisco.html">Clairo album reviews</a>
+      <a href="../Lizzy/lizzyabout.html">Lizzy McAlpine biography</a>
+      <a href="../Lizzy/lizzydisco.html">Lizzy album reviews</a>
+      <a href="#featured-artists">Featured artists</a>
     </nav>
   </header>
 
-  <main>
+  <main class="home-main" id="main-content">
     <section class="featured-images" id="featured-artists" aria-label="Featured artists">
-<img src="clairo-featured.png" alt="Clairo featured image" width="180">      
-<img src="lizzy-featured.png" alt="Lizzy McAlpine featured image" width="180">      
+      <a class="featured-card" href="../Clairo/clairoabout.html">
+        <img src="../clairo-featured.png" alt="Clairo performing on stage">
+        <span>Clairo</span>
+      </a>
+      <a class="featured-card" href="../Lizzy/lizzyabout.html">
+        <img src="../lizzy-featured.png" alt="Portrait of Lizzy McAlpine">
+        <span>Lizzy McAlpine</span>
+      </a>
     </section>
 
-    <section class="intro" aria-label="About this music blog">
+    <section class="intro" aria-labelledby="intro-heading">
+      <p class="eyebrow">Indie pop, folk &amp; R&amp;B</p>
+      <h1 id="intro-heading">Find your next favorite</h1>
       <p>Explore the artists, albums, and songs that make indie pop and R&amp;B so special. Find a new favorite, revisit a great record, and follow the music wherever it leads.</p>
-      <a href="Clairo/clairoabout.html">Read more</a>
+      <a class="read-more" href="../Clairo/clairoabout.html">Read about Clairo</a>
     </section>
   </main>
 </body>
