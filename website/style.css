@@ -138,6 +138,39 @@ img {
   min-height: 16rem;
 }
 
+.featured-images.is-compact .featured-card img {
+  height: clamp(14rem, 30vw, 23rem);
+}
+
+.featured-controls {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.featured-controls[hidden] {
+  display: none;
+}
+
+.image-size-toggle {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--color-heading);
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+  color: var(--color-heading);
+  cursor: pointer;
+  font: inherit;
+}
+
+.image-size-toggle:hover {
+  background: var(--color-panel);
+}
+
+.image-size-toggle:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
 .featured-card {
   position: relative;
   flex: 1 1 50%;
@@ -150,7 +183,7 @@ img {
   width: 100%;
   height: clamp(18rem, 48vw, 36rem);
   object-fit: cover;
-  transition: transform 250ms ease;
+  transition: height 250ms ease, transform 250ms ease;
 }
 
 .featured-card:hover img {
@@ -427,6 +460,10 @@ img {
     min-height: 14rem;
   }
 
+  .featured-images.is-compact .featured-card img {
+    height: clamp(14rem, 50vw, 20rem);
+  }
+
   .featured-card img {
     height: clamp(16rem, 70vw, 26rem);
   }
@@ -492,6 +529,10 @@ img {
 
   .featured-card img {
     height: 17rem;
+  }
+
+  .featured-images.is-compact .featured-card img {
+    height: 13rem;
   }
 
   .release-item {
